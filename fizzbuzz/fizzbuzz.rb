@@ -9,11 +9,11 @@
 
 class FizzBuzz
 	def calculate(i)
-		if ((i % 5)  ==0) and ((i % 3) == 0) or (i.to_s.include? "3" and i.to_s.include? "5")
+		if (i % 15  == 0) or (i.to_s.include? "3" and i.to_s.include? "5")
 		 	"FIZZBUZZ"
-		elsif (i%3 == 0) or i.to_s.include? "3"
+		elsif (i % 3 == 0) or i.to_s.include? "3"
 			"FIZZ"
-		elsif i%5 == 0 or i.to_s.include? "5"
+		elsif (i%5 == 0) or i.to_s.include? "5"
 			"BUZZ"
 		else
 			i
